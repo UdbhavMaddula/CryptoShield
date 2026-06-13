@@ -80,7 +80,7 @@ CryptoShield/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/CryptoShield.git
+git clone https://github.com/UdbhavMaddula/CryptoShield.git
 cd CryptoShield
 ```
 

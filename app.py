@@ -16,7 +16,7 @@ st.set_page_config(
 )
 
 
-# ----------------------------- Helpers -----------------------------
+
 
 def normalize_key(user_key):
     return hashlib.sha256(user_key.encode()).digest()
@@ -123,7 +123,7 @@ def decrypt_rsa(encoded_ciphertext, private_key_text):
         return {"success": False, "error": "Invalid private key or corrupted ciphertext."}
 
 
-# ----------------------------- UI -----------------------------
+
 
 st.title("🛡️ CryptoShield")
 st.caption("AES, DES & RSA Encryption Playground — Learn How Encryption Works")
@@ -140,7 +140,7 @@ algorithm = st.selectbox(
 
 st.divider()
 
-# ----------------------------- RSA -----------------------------
+
 if "RSA" in algorithm:
 
     st.subheader("🔑 RSA Key Generation")
@@ -236,7 +236,7 @@ if "RSA" in algorithm:
         "used to encrypt a symmetric key (e.g., AES), not the data itself."
     )
 
-# ----------------------------- AES / DES -----------------------------
+
 else:
 
     is_aes = "AES" in algorithm
